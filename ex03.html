@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+ <div class="header-container">
+  <h1>レシピ栄養素</h1>
+</div>
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+  <a href="ex2.html" class="navbar-brand px-5">検索</a>
+
+  <button class="navbar-toggler" type="button"
+      data-toggle="collapse"
+      data-target="#navmenu1"
+      aria-controls="navmenu1"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="navbar-nav">
+　　　<a class="nav-item nav-link" href="ex01.html">HOME</a>
+      <a class="nav-item nav-link" href="ex02.html">記録</a>
+      <a class="nav-item nav-link" href="ex03.html">検索</a>
+
+    </div>
+
+</nav>
+
+</head>
+
+<style>
+body{background-color:#F5F5F5;}
+</style>
+<body>
+	<div class="mx-5">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
+        <script src="form_submit.js">
+        </script>
+
+        <form action="nutrium_calc.php" method="POST">
+            レシピID：<input name="keyword" type="text" size=20 >
+			<input type="reset" class ="btn btn-danger" value="料理を検索"><br />
+<textarea id="result" cols=200 rows=10></textarea></br>
+</form>
+　　　　<form action="nutrium_calc.php" method="POST">
+            日付：<input name="keyword" type="date"  >
+			<input type="reset" class ="btn btn-danger" value="履歴の確認"><br />
+<textarea id="result" cols=200 rows=10></textarea></br>
+
+        </form>
+</body>
+
+</html>

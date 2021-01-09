@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+ <div class="header-container">
+  <h1>レシピ栄養素</h1>
+</div>
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+  <a href="ex03.html" class="navbar-brand px-5">記録</a>
+  <button class="navbar-toggler" type="button"
+      data-toggle="collapse"
+      data-target="#navmenu1"
+      aria-controls="navmenu1"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="ex01.html">HOME</a>
+      <a class="nav-item nav-link" href="ex02.html">記録</a>
+      <a class="nav-item nav-link" href="ex03.html">検索</a>
+
+    </div>
+
+</nav>
+
+</head>
+<style>
+body{background-color:#F5F5F5;}
+</style>
+
+<body>
+
+
+	<div class="mx-5">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
+        <script src="form_submit.js">
+        </script>
+
+        <form action="nutrium_calc.php" method="POST">
+            材料名：<input name="keyword" type="text" size=65 ><br>
+	    重さ(g)：<input name="keyword" type="text" size=65 ><br>
+			<input type="submit" class="btn btn-primary" value="追加">
+			<input type="reset" class ="btn btn-danger" value="リセット"><br />
+        </form>
+
+ <textarea id="result" cols=200 rows=10></textarea></br>
+<input type="reset" class = "btn btn-danger" value="記録">
+<h5>(前日の記録）</h5>
+<textarea id="result" cols=200 rows=10></textarea>
+<h5>(当日の記録）</h5>
+<textarea id="result" cols=200 rows=10></textarea>
+<h5>(提案する料理）</h5>
+<textarea id="result" cols=200 rows=3></textarea>
+</body>
+
+
+</html>
